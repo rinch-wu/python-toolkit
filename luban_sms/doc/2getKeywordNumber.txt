@@ -1,0 +1,31 @@
+curl 'https://lubansms.com/v2/api/getKeywordNumber?apikey=apikey_luban&phone=&cardType=%E5%85%A8%E9%83%A8' \
+  -X 'TRUE' \
+  -H 'authority: lubansms.com' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8' \
+  -H 'cookie: PHPSESSID=hkuqeri4tb1lse0cp0lmbav5e4; _gcl_au=1.1.708617407.1714212106; origin=google_kd; language=zh; _gcl_aw=GCL.1714271180.EAIaIQobChMIhJqKvu3jhQMVTsYWBR2aCQ7REAEYASAAEgIyTPD_BwE' \
+  -H 'origin: https://lubansms.com' \
+  -H 'referer: https://lubansms.com/v2/keywordReceiveSms' \
+  -H 'sec-ch-ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --compressed
+
+get
+
+data = {
+    apikey: apikey_luban
+    phone: 
+    cardType: 全部
+}
+
+{
+  "code": 0,
+  "msg": "获取成功",
+  "phone": "13800000000"
+}

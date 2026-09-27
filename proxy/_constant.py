@@ -1,0 +1,45 @@
+country_code_list = [
+    "US",
+    "CN",
+    "FR",
+    "BR",
+    "CA",
+    "BD",
+    "HK",
+    "DE",
+    "CO",
+    "RU",
+    "PH",
+    "GB",
+    "UA",
+    "ID",
+    "VN",
+    "TR",
+    "IN",
+    "MX",
+    "SG",
+    "TH",
+    "EC",
+    "IR",
+    "KH",
+    "PL",
+    "GE",
+    "JP",
+    "AR",
+    "BO",
+    "CL",
+    "EG",
+    "VE",
+    "ZA",
+    "NL",
+    "ES",
+    "HN",
+    "PY",
+    "DO",
+]
+protocol_list = ["http", "https", "socks4", "socks5"]
+anonymity_list = [
+    "elite",  # 高匿代理，不知道代理
+    "anonymous",  # 匿名代理，知道是代理，但不知道源ip
+    "transparent",  # 透明代理，知道是代理，知道源ip
+]

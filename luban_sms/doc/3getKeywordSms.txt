@@ -1,0 +1,44 @@
+curl 'https://lubansms.com/v2/api/getKeywordSms?apikey=apikey_luban&phone=13800000000&keyword=%E4%BA%91%E6%9C%8B%E5%85%8B' \
+  -X 'TRUE' \
+  -H 'authority: lubansms.com' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8' \
+  -H 'cookie: PHPSESSID=hkuqeri4tb1lse0cp0lmbav5e4; _gcl_au=1.1.708617407.1714212106; origin=google_kd; language=zh; _gcl_aw=GCL.1714271180.EAIaIQobChMIhJqKvu3jhQMVTsYWBR2aCQ7REAEYASAAEgIyTPD_BwE' \
+  -H 'origin: https://lubansms.com' \
+  -H 'referer: https://lubansms.com/v2/keywordReceiveSms' \
+  -H 'sec-ch-ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --compressed
+
+
+get
+
+data = {
+    apikey: apikey_luban
+    phone: 13800000000
+    keyword: 云朋克
+}
+
+{
+  "code": 400,
+  "msg": "尚未收到短信,请稍后重试"
+}
+结果【等待短信】
+
+{"code":400,"msg":"尚未收到短信,请稍后重试"}
+
+结果【收到短信】
+
+{"code":0,"msg":"	【云朋克】您的验证码是 354719，请勿传递他人，5分钟后过期"}
+
+可能的错误
+
+{"code":400,"msg":"请稍后重试"}
+
+{"code":400,"msg":"不正确的apikey"}
